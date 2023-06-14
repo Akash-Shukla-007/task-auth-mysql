@@ -1,0 +1,42 @@
+POST http://localhost:8000
+Content-Type: application/json
+
+{
+    "name":"akash",
+    "email":"shuk@gmail.com",
+    "password":"akakak"
+}
+
+###
+POST http://localhost:8000/login
+Content-Type: application/json
+
+{
+    "name":"akash",
+    "email":"shuk@gmail.com",
+    "password":"akakak"
+}
+
+###
+POST http://localhost:8000/add-task
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFrYXNoMTIzNEBnbWFpbC5jb20iLCJpYXQiOjE2ODY3MTc0OTd9.satQelt-7k1YC7C_13-JIe3fbYnwTxgzBs3uyNkDSg8
+
+{
+    "title":"Work for 4 hrs"
+}
+
+###
+
+POST http://localhost:8000/default
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFrYXNoMTIzNEBnbWFpbC5jb20iLCJpYXQiOjE2ODY3MTc0OTd9.satQelt-7k1YC7C_13-JIe3fbYnwTxgzBs3uyNkDSg8
+
+###
+DELETE http://localhost:8000/delete-task
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFrYXNoMTIzNEBnbWFpbC5jb20iLCJpYXQiOjE2ODY3MTc0OTd9.satQelt-7k1YC7C_13-JIe3fbYnwTxgzBs3uyNkDSg8
+
+{
+    "task_id":"6"
+}
